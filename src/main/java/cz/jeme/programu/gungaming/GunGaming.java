@@ -186,7 +186,7 @@ public final class GunGaming extends JavaPlugin {
      * @param key The namespaced key string key
      * @return The namespaced key created
      */
-    public static @NotNull NamespacedKey generateNamespacedKey(@NotNull String key) {
+    public static @NotNull NamespacedKey namespacedKey(@NotNull String key) {
         return new NamespacedKey(getPlugin(), key);
     }
 }

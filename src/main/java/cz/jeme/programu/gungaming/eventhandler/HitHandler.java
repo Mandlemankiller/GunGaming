@@ -123,9 +123,14 @@ public final class HitHandler {
             return;
         }
         resetDamageTicks(hurt);
-        if (!(hurt instanceof Player hurtPlayer) || !(damager instanceof Player damagerPlayer)) return;
-        Namespace.LAST_HIT.set(hurtPlayer, System.currentTimeMillis());
-        Namespace.LAST_DAMAGER.set(hurtPlayer, damagerPlayer.getUniqueId().toString());
+        if (!(hurt instanceof Player && damager instanceof Player)) return;
+        if (Game.isRunning()) {
+            Game game = Game.getInstance();
+            assert game != null : "Game is null when running!";
+            if (!game.isPvpEnabled()) {
+                event.setCancelled(true);
+            }
+        }
     }
 
     private static void onBulletDamage(@NotNull EntityDamageByEntityEvent event, @NotNull Arrow bullet, @NotNull LivingEntity hurt) {

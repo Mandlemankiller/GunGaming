@@ -33,8 +33,9 @@ public final class Game {
     private final @NotNull CommandSender sender;
     private final @NotNull List<Player> players;
     private static @Nullable World world;
+    private boolean pvpEnabled = false;
     private static final @NotNull BossBar BOSS_BAR = BossBar.bossBar(
-            Message.from("<b><#6786C8>Gun</#6786C8><#4C618D>Gaming</#4C618D> <#717B95>v"
+            Message.from("<b><#6786C8>Gun</#6786C8><#4C618D>Gaming</#4C618D> <#717B95>"
                     + GunGaming.getPlugin().getPluginMeta().getVersion()
                     + "</#717B95></b>"
             ),
@@ -274,6 +275,7 @@ public final class Game {
                 );
                 Sounds.ding(player);
             }
+            pvpEnabled = true;
             new GameTimer();
         }
 
@@ -325,5 +327,9 @@ public final class Game {
 
     public int getCenterZ() {
         return centerZ;
+    }
+
+    public boolean isPvpEnabled() {
+        return pvpEnabled;
     }
 }
