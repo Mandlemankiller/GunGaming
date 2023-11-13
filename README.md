@@ -1,7 +1,7 @@
 # GunGaming
 ## This project is still in BETA and is not prepared for normal usage.
 ## About
-GunGaming ~~is~~ *will be* an awesome minigame with guns, crates and way more.
+GunGaming ~~is~~ ~~will be~~ *won't be*  an awesome minigame with guns, crates and way more.
 ## Supported versions
 Paper based servers 1.20.2<br>
 **Bukkit and Spigot are not supported!**
