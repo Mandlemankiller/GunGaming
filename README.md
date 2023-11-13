@@ -1,5 +1,9 @@
 # GunGaming
-## This project is still in BETA and is not prepared for normal usage.
+## ~~This project is still in BETA and is not prepared for normal usage.~~
+## This project is discontinued, the development of a similar plugin has been moved to [Fuze](https://github.com/Mandlemankiller/Fuze).
+### Thanks for the ride!
+Thank you [Kopikiadu](https://github.com/kopikiadu) for your contributions!
+<br>Thank you [mkcz](https://github.com/Craflix), [Tomkudleq](https://github.com/Tomkudleq) and [Lixidixy](https://github.com/foxos21) for the support!
 ## About
 GunGaming ~~is~~ ~~will be~~ *won't be*  an awesome minigame with guns, crates and way more.
 ## Supported versions
